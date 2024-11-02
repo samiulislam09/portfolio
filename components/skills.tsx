@@ -8,10 +8,10 @@ import {
 import { Badge } from "@/components/ui/badge";
 
 const skills = {
-  "Frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
-  "Backend": ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
-  "Tools": ["Git", "Docker", "AWS", "Jest", "CI/CD"],
-  "Soft Skills": ["Problem Solving", "Team Leadership", "Communication", "Agile"]
+  "Frontend": ["Flutter", "React.js", "TypeScript"],
+  "Backend": ["Node.js", "Nest.js", "PostgreSQL", "MySQL", "REST APIs"],
+  "Tools": ["Git", "Docker", "AWS"],
+  "Soft Skills": ["Problem Solving", "Teamwork", "Communication","Adaptability","Goood Design Sence", "Agile"]
 };
 
 export function Skills() {

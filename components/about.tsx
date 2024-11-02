@@ -9,13 +9,13 @@ export function About() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
             <p className="text-muted-foreground">
-              I'm a passionate Full Stack Developer with over 5 years of experience in building web applications.
-              I specialize in React, Node.js, and modern web technologies.
+              I'm a passionate Mobile apps Developer with over 6 months of experience in building Mobile applications.
+              I specialize in Flutter, Nest.js, React.js.
             </p>
             <div className="space-y-2">
               <h3 className="font-semibold">What I do:</h3>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                <li>Build scalable web applications</li>
+                <li>Build scalable Android applications</li>
                 <li>Create responsive user interfaces</li>
                 <li>Develop RESTful APIs</li>
                 <li>Optimize application performance</li>
