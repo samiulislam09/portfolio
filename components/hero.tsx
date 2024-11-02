@@ -28,8 +28,8 @@ export function Hero() {
             </Button>
             <div className="flex items-center space-x-4">
               {[
-                { icon: Github, href: "https://github.com" },
-                { icon: Linkedin, href: "https://linkedin.com" },
+                { icon: Github, href: "https://github.com/samiulislam09" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/samiul-islam-1700251a2/" },
                 { icon: Twitter, href: "https://twitter.com" },
               ].map(({ icon: Icon, href }) => (
                 <Button
