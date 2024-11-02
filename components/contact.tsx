@@ -33,6 +33,8 @@ export function Contact() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    // get the value from the form
+    console.log(values);
     toast.success("Message sent successfully!");
     form.reset();
   }
