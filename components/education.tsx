@@ -24,7 +24,7 @@ function Education() {
             <div className="mb-4 max-w-2xl">
                 <h3 className="text-lg font-medium text-gray-300">Junior Software Engineer</h3>
                 <p className="text-gray-400">European IT Solutions Institute - January 2022 - July 2022</p>
-                <p className="text-gray-400">Worked with the front-end team and developed a single-page application with Sanity CMS API for displaying JSON-retrieved data using ReactJs.</p>
+                <p className="text-gray-400">Worked with the front-end team and developed single-page application with Sanity CMS API for displaying JSON-retrieved data using ReactJs.</p>
             </div>
         </div>
     </div>

@@ -15,7 +15,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import emailjs from "emailjs-com";
 
+// Define schema for form validation
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
@@ -32,11 +34,26 @@ export function Contact() {
     },
   });
 
+  // Handle form submission
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // get the value from the form
-    console.log(values);
-    toast.success("Message sent successfully!");
-    form.reset();
+    console.log(values)
+    emailjs
+      .send(
+        "service_f5t8it5",     // Replace with your EmailJS service ID
+        "template_e4sx378",     // Replace with your EmailJS template ID
+        values,                 // Form data
+        "dWs3evc3i6eSIq9rH"          // Replace with your EmailJS user ID
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully!");
+          form.reset();
+        },
+        (error) => {
+          toast.error("Failed to send message, please try again.");
+          console.error("EmailJS error:", error);
+        }
+      );
   }
 
   return (
